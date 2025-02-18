@@ -1,0 +1,234 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (32) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Feb 17 2025 19:00:41[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ae08h ( 44552) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001ae30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001ae54 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d1f8 vaddr=40080000 size=02e20h ( 11808) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=16318h ( 90904) map[0m
+[0;32mI (156) esp_image: segment 5: paddr=00036340 vaddr=40082e20 size=0b300h ( 45824) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (199) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (199) app_init: Application information:[0m
+[0;32mI (199) app_init: Project name:     motion-detector[0m
+[0;32mI (204) app_init: App version:      1[0m
+[0;32mI (207) app_init: Compile time:     Feb 17 2025 19:00:35[0m
+[0;32mI (212) app_init: ELF file SHA256:  1d83090ad...[0m
+[0;32mI (217) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (220) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (224) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (228) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (232) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (238) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFB2C88 len 0002D378 (180 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 4008E120 len 00011EE0 (71 KiB): IRAM[0m
+[0;32mI (266) spi_flash: detected chip: generic[0m
+[0;32mI (268) spi_flash: flash io: dio[0m
+[0;33mW (271) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (284) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (294) main_task: Started on CPU0[0m
+[0;32mI (304) main_task: Calling app_main()[0m
+[0;32mI (304) main_task: Returned from app_main()[0m
+Angle X: 0.000000, Angle Y: 0.000000
+Angle X: -0.986656, Angle Y: -13.976035
+Angle X: -1.891786, Angle Y: -26.797262
+Angle X: -2.631344, Angle Y: -37.273140
+Angle X: -3.235616, Angle Y: -45.832699
+Angle X: -3.729351, Angle Y: -52.826485
+Angle X: -4.132768, Angle Y: -58.540913
+Angle X: -4.462389, Angle Y: -63.210022
+Angle X: -4.731713, Angle Y: -67.025017
+Angle X: -4.951772, Angle Y: -70.142151
+Angle X: -5.131575, Angle Y: -72.689072
+Angle X: -5.278487, Angle Y: -74.770096
+Angle X: -5.398526, Angle Y: -76.470444
+Angle X: -5.496606, Angle Y: -77.859756
+Angle X: -5.576744, Angle Y: -78.994926
+Angle X: -5.642224, Angle Y: -79.922440
+Angle X: -5.695725, Angle Y: -80.680290
+Angle X: -5.739439, Angle Y: -81.299500
+Angle X: -5.775157, Angle Y: -81.805435
+Angle X: -5.804342, Angle Y: -82.218834
+Angle X: -5.828187, Angle Y: -82.556610
+Angle X: -5.847671, Angle Y: -82.832588
+Angle X: -5.863589, Angle Y: -83.058090
+Angle X: -5.876596, Angle Y: -83.242332
+Angle X: -5.887225, Angle Y: -83.392876
+Angle X: -5.895909, Angle Y: -83.515892
+Angle X: -5.903004, Angle Y: -83.616394
+Angle X: -5.908802, Angle Y: -83.698517
+Angle X: -5.913539, Angle Y: -83.765617
+Angle X: -5.917409, Angle Y: -83.820442
+Angle X: -5.920571, Angle Y: -83.865234
+Angle X: -5.923155, Angle Y: -83.901840
+Angle X: -5.925267, Angle Y: -83.931747
+Angle X: -5.926992, Angle Y: -83.956184
+Angle X: -5.928401, Angle Y: -83.976143
+Angle X: -5.929554, Angle Y: -83.992462
+Angle X: -5.930494, Angle Y: -84.005791
+Angle X: -5.931263, Angle Y: -84.016678
+Angle X: -5.931891, Angle Y: -84.025574
+Angle X: -5.932405, Angle Y: -84.032837
+Angle X: -5.932824, Angle Y: -84.038773
+Angle X: -5.933167, Angle Y: -84.043633
+Angle X: -5.933447, Angle Y: -84.047592
+Angle X: -5.933675, Angle Y: -84.050842
+Angle X: -5.933862, Angle Y: -84.053490
+Angle X: -5.934014, Angle Y: -84.055649
+Angle X: -5.934139, Angle Y: -84.057411
+Angle X: -5.934241, Angle Y: -84.058861
+Angle X: -5.934324, Angle Y: -84.060043
+Angle X: -5.934392, Angle Y: -84.061020
+Angle X: -5.934449, Angle Y: -84.061806
+Angle X: -5.934494, Angle Y: -84.062454
+Angle X: -5.934531, Angle Y: -84.062981
+Angle X: -5.934562, Angle Y: -84.063408
+Angle X: -5.934587, Angle Y: -84.063759
+Angle X: -5.934607, Angle Y: -84.064049
+Angle X: -5.934623, Angle Y: -84.064278
+Angle X: -5.934637, Angle Y: -84.064468
+Angle X: -5.934647, Angle Y: -84.064621
+Angle X: -5.934657, Angle Y: -84.064766
+Angle X: -5.934664, Angle Y: -84.064842
+Angle X: -5.934669, Angle Y: -84.064919
+Angle X: -5.934673, Angle Y: -84.064995
+Angle X: -5.934678, Angle Y: -84.065071
+Angle X: -5.934683, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140
+Angle X: -5.934685, Angle Y: -84.065140

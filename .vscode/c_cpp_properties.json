@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "ESP32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${IDF_PATH}/components/**",
+                "${IDF_PATH}/components/freertos/include",
+                "${IDF_PATH}/components/esp_common/include",
+                "${IDF_PATH}/components/driver/include"
+            ],
+            "defines": [
+                "ESP_PLATFORM"
+            ],
+            "compilerPath": "/path/to/xtensa-esp32-elf-gcc",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
